@@ -1,0 +1,60 @@
+
+
+
+.top{
+  width: 100%;
+  height: 48px;
+  background: #001529;
+  .top-title{
+    width: 200px;
+    height: 48px;
+    background: #1890ff;
+    float: left;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .top-right{
+    float: right;
+    cursor: pointer;
+    .t1-message{
+      float: right;
+      width: 90px;
+      height: 48px;
+      text-align: center;
+      line-height: 48px;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      color: #fff;
+    }
+    .t1-people{
+      float: right;
+      height: 48px;
+      min-width: 90px;
+      text-align: center;
+      line-height: 48px;
+      color: #fff;
+      position: relative;
+      .people-hover{
+        position: absolute;
+        top:0;
+        width: 90px;
+        height: 48px;
+        color: #fff;
+        border: 1px solid #000;
+        z-index: -1;
+        transition: all 0.3s;
+        background: #001529;
+      }
+    }
+    .t1-people:hover{
+      .people-hover{
+        top:48px;
+        z-index: 0;
+      }
+    }
+  }
+}

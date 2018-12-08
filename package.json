@@ -1,0 +1,62 @@
+{
+  "name": "node_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=dev webpack-dev-server --progress --hot --colors",
+    "dev": "set NODE_ENV=dev && webpack-dev-server --progress --hot --colors",
+    "dist": "set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ],
+  "dependencies": {
+    "antd": "^3.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-loadable": "^5.3.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "react-hot-loader": "^3.0.0",
+    "react-transform-hmr": "^1.0.4",
+    "redux-logger": "^3.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

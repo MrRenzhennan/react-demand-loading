@@ -1,0 +1,22 @@
+@function get-vw($target) {
+  $vw-context: (1366*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+
+.clearfix:before,
+.container:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* IE 6/7 */
+
+.clearfix {
+  zoom: 1;
+}
